@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
+import Kurumsal from './pages/Kurumsal/Kurumsal'
 
 
 
@@ -19,23 +20,27 @@ function App() {
       children: [
         {
           index: true,
-          element:<Home/>
+          element: <Home />,
         },
         {
           path: "about",
-          element: <About/>
+          element: <About />,
         },
         {
           path: "contact",
-          element:<Contact/>
+          element: <Contact />,
+        },
+        {
+          path: "kurumsal",
+          element: <Kurumsal />,
         },
         {
           path: "404",
-          element:<NotFound/>
-        }
-      ]
-    }
-  ])
+          element: <NotFound />,
+        },
+      ],
+    },
+  ]);
 
   return (
 

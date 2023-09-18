@@ -4,14 +4,31 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { BiLogoTwitter } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
 import { BiLogoLinkedin } from "react-icons/bi";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+
+
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
+
 import img1 from "../../assets/image1.png"
 import mause from "../../assets/mause.png"
 import img3 from "../../assets/img3.png";
 import img4 from "../../assets/img4.png";
+import slider1 from "../../assets/slider1.png";
+import slider2 from "../../assets/slider2.png";
+import slider3 from "../../assets/slider3.png";
+import slider4 from "../../assets/slider4.png";
 import imgCenter from "../../assets/imgCenter.png"
+import analiz from "../../assets/analiz.png";
+import clock from "../../assets/Clock.png"
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -150,9 +167,11 @@ const Home = () => {
               </div>
 
               <div className="btn py-[40px] text-center text-white">
+                <Link to="/kurumsal">
                 <button className="bntKurumsal py-[10px] px-[20px] bg">
                   KURUMSAL <span>&#8594;</span>
                 </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -180,7 +199,189 @@ const Home = () => {
             </div>
 
             <div className="swiper">
-          
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{
+                  clickable: true,
+                }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                  },
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src={slider1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider4} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider1} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider2} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider3} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider4} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={slider2} alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section4">
+        <div className="conteiner">
+          <div className="block5 py-[50px]">
+            <div className="leftRight flex flex-wrap justify-around items-center">
+              <div className="left">
+                <div className="porag1">
+                  <p className="text-[#98A2B3]">HABER & BLOG</p>
+                  <p className="por text-[66px]">Son Gelişmeler</p>
+                </div>
+              </div>
+              <div className="rightt">
+                <div className="aroowandBtn flex gap-10 items-center">
+                  <div className="arrow flex  gap-5">
+                    <div className="arrowRight">
+                      <span className="py-[10px] px-[10px] border-[1px] border-black rounded-full">
+                        &#8592;
+                      </span>
+                    </div>
+                    <div className="arrowLeft">
+                      <span className="py-[10px] px-[10px] border-[1px] border-black rounded-full">
+                        &#8594;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="btn">
+                    <button className="btnN py-[10px] px-[10px] text-white ">
+                      HABERLER <span>&#8594;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="leftRight flex flex-wrap justify-center gap-20">
+              <div className="left">
+                <img src={analiz} alt="" className="sm:py-[20px] md:py-[0]" />
+                <div className="clock flex gap-5 py-[20px]">
+                  <div className="img">
+                    <img src={clock} alt="" />
+                  </div>
+                  <div className="porag2">
+                    <p>21 Mayıs 2023</p>
+                  </div>
+                </div>
+
+                <div className="text">
+                  <p className="p5">
+                    Araştırmacılar, elektron mikroskobu için veri <br />{" "}
+                    biliminden ve yapay zekâdan yararlanmak <br /> için yol
+                    haritası çıkarıyor
+                  </p>
+                </div>
+              </div>
+
+              <div className="right5 grid grid-cols-1 justify-center">
+                <div className="blockCha1 first-letter:">
+                  <div className="clock flex gap-5 py-[20px]">
+                    <div className="img">
+                      <img src={clock} alt="" />
+                    </div>
+                    <div className="porag2">
+                      <p>21 Mayıs 2023</p>
+                    </div>
+                  </div>
+
+                  <div className="txt">
+                    <p>
+                      Araştırmacılar, elektron mikroskobu için veri biliminden
+                      ve yapay <br /> zekâdan yararlanmak için yol haritası
+                      çıkarıyor
+                    </p>
+                  </div>
+                  <br />
+                  <hr />
+                </div>
+
+                <div className="blockCha2  py-[50px]">
+                  <div className="clock flex gap-5 py-[20px]">
+                    <div className="img">
+                      <img src={clock} alt="" />
+                    </div>
+                    <div className="porag2">
+                      <p>21 Mayıs 2023</p>
+                    </div>
+                  </div>
+
+                  <div className="txt">
+                    <p>
+                      Araştırmacılar, elektron mikroskobu için veri biliminden
+                      ve yapay <br /> zekâdan yararlanmak için yol haritası
+                      çıkarıyor
+                    </p>
+                  </div>
+                  <br />
+                </div>
+
+                <div className="blockCha3 py-[50px]">
+                  <div className="clock flex gap-5 py-[20px]">
+                    <div className="img">
+                      <img src={clock} alt="" />
+                    </div>
+                    <div className="porag2">
+                      <p>21 Mayıs 2023</p>
+                    </div>
+                  </div>
+                  <div className="txt">
+                    <p>
+                      Araştırmacılar, elektron mikroskobu için veri biliminden
+                      ve yapay <br /> zekâdan yararlanmak için yol haritası
+                      çıkarıyor
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section5">
+        <div className="conteiner">
+          <div className="block6 text-center py-[100px] text-white ">
+            <p className="text-[40px] font-bold py-[5px]">Farklı Ürünler Üretiyor,</p>
+            <p className="text-[40px] py-[5px]">Kaliteden Ödün Vermiyoruz.</p>
+            <div className="btn">
+              <button className="btn10 py-[10px] px-[20px] bg">İLETİŞİME GEÇ</button>
             </div>
           </div>
         </div>
