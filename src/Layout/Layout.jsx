@@ -161,13 +161,13 @@ export const Layout = () => {
             <h1>Son Gelişmelerden </h1>
             <h1 className="font-bold">Haberdar Olun</h1>
 
-            <div className="inpBtn sm:block  md:flex  gap-5  py-[20px]">
+            <div className="inpBtn sm:block lg:flex  gap-5  py-[20px]">
               <input
                 type="text"
                 className="outline-none bg-gray-300 rounded-lg my-[10px]"
               />
 
-              <button className="sm:ml-[100px] md:ml-[0px] flex items-center text-lg py-[10px] px-[20px] bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-xl">
+              <button className="sm:ml-[100px] md:ml-[0px] flex items-center text-lg py-[5px] px-[10px] bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-xl">
                 GÖNDER →
               </button>
             </div>

@@ -1,0 +1,97 @@
+ .conteiner{
+ max-width: 1240px;
+ margin: 0 auto;
+}
+
+.btn1{
+border-radius: 10px 2px;
+border: 1px solid #000;
+}
+
+.p1{
+color: rgba(0, 0, 0, 0.30);
+font-family: Qanelas;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.44px;
+}
+
+.text2{
+    color: #12303A;
+font-family: Qanelas;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+
+.imgCenter{
+    background-image: url(/src/assets/imgCenter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section2{
+    background: radial-gradient(65.1% 54.71% at 60.05% 46.22%, #2A5868 0%, #12303A 100%); 
+}
+
+.underText{
+    background: linear-gradient(92deg, #FFF 5.67%, #27A1B3 99.87%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Qanelas;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.bntKurumsal{
+    
+background: linear-gradient(96deg, #27A1B3 -1.02%, #7ED7E2 102.18%);
+
+}
+
+.por{
+    background: linear-gradient(90deg, #7ED7E2 0.1%, #23697B 94.41%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+body {
+      position: relative;
+      height: 100%;
+    }
+
+
+.swiper {
+  
+  height: 100%;
+  max-width: 650px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
