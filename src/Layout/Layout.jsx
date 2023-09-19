@@ -24,7 +24,9 @@ export const Layout = () => {
             <img src={logo} alt="" />
           </div>
           <div className="items">
+            <Link to="/urunler">
             <img src={items} alt="" />
+            </Link>
           </div>
 
           <div className="item sm:ml-[50px] flex  ">

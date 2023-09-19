@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
 import Kurumsal from './pages/Kurumsal/Kurumsal'
 import Uygulamalar from './pages/Uygulamalar/Uygulamalar'
+import Urunler from './pages/Urunler/Urunler'
 
 
 
@@ -38,6 +39,10 @@ function App() {
         {
           path: "uygulamalar",
           element: <Uygulamalar />,
+        },
+        {
+          path: "urunler",
+          element: <Urunler />,
         },
         {
           path: "404",
