@@ -1,0 +1,89 @@
+.p11{
+    color: var(--turkuazkoyu-8-main, #245766);
+font-family: Qanelas;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 23px; /* 115% */
+letter-spacing: -0.6px;
+}
+.p22{
+    color: var(--beyaz-6, #98A2B3);
+font-family: Qanelas;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 23px; /* 115% */
+letter-spacing: -0.6px;
+}
+
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+.swipe{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(179, 233, 238, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%); 
+}
+
+.section3{
+    background: linear-gradient(185deg, #F2F4F7 6.24%, #FCFDFD 74.67%);
+}

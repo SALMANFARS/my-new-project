@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
 import Kurumsal from './pages/Kurumsal/Kurumsal'
+import Uygulamalar from './pages/Uygulamalar/Uygulamalar'
 
 
 
@@ -33,6 +34,10 @@ function App() {
         {
           path: "kurumsal",
           element: <Kurumsal />,
+        },
+        {
+          path: "uygulamalar",
+          element: <Uygulamalar />,
         },
         {
           path: "404",

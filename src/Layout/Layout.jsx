@@ -32,7 +32,7 @@ export const Layout = () => {
               <Link to="/">
                 <li>Kurumsal</li>
               </Link>
-              <Link to="/about">
+              <Link to="/uygulamalar">
                 <li>Uygulamalar</li>
               </Link>
               <Link to="/contact">

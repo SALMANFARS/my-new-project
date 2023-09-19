@@ -34,7 +34,7 @@ const Home = () => {
     <div>
       <div className="section1">
         <div className="conteiner">
-          <div className="block1 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-items-center">
+          <div className="block1 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-items-center py-[40px]">
             <div className="left">
               <div className="txt1">
                 <h1 className="text-[44px] py-[10px]">
@@ -79,7 +79,7 @@ const Home = () => {
               <img src={img1} alt="" />
               {/* <img src={imgCenter} alt="" className="relative right-[50px] bottom-[100px]" /> */}
               <div className="socialMause flex gap-10 justify-center">
-                <div className="socil flex gap-10 py-[10px] ">
+                <div className="socil flex gap-10 py-[20px] ">
                   <div className="facebook">
                     <BiLogoFacebook />
                   </div>

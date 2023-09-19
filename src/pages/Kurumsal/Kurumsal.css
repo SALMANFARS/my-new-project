@@ -1,0 +1,46 @@
+.textBanka{
+    background: linear-gradient(92deg, #FFF 5.67%, #27A1B3 99.87%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Qanelas;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}
+
+.section2{
+    background-image: url(../../assets/bg10.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.border{
+    border-right: 1px solid rgba(255, 255, 255, 0.00);
+    
+}
+
+.countery2{
+    color: rgba(255, 255, 255, 0.145);
+
+}
+
+.textsss{
+    border-bottom: 1px solid  linear-gradient(90deg, rgba(255, 255, 255, 0.50) 0.6%, rgba(255, 255, 255, 0.00) 99.02%);
+}
+
+.img30{
+     background-image: url(../../assets/img30.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img20{
+     background-image: url(../../assets/img20.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
