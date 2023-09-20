@@ -65,11 +65,10 @@ export const Layout = () => {
       <Outlet />
 
       <footer className="sm:grid grid-cols-1 justify-items-center  md:grid-cols-2 pt-[50px]">
-        <div className="left ">
-          <div className="blocks flex gap-10">
-            <div className="block1">
+        <div className="left">
+          <div className="blocks sm:grid sm:grid-cols-1 sm:text-center md:grid-cols-3 md:text-start gap-10">
+            <div className="block1 ">
               <img src={logo} alt="" />
-
               <div className="us py-[20px]">
                 <div className="item  flex py-[5px] ">
                   <div className="ma mr-[20px]">

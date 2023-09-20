@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound/NotFound'
 import Kurumsal from './pages/Kurumsal/Kurumsal'
 import Uygulamalar from './pages/Uygulamalar/Uygulamalar'
 import Urunler from './pages/Urunler/Urunler'
+import UrunDetay from './pages/UrunDetay/UrunDetay'
 
 
 
@@ -43,6 +44,10 @@ function App() {
         {
           path: "urunler",
           element: <Urunler />,
+        },
+        {
+          path: "urunDetay",
+          element: <UrunDetay />,
         },
         {
           path: "404",

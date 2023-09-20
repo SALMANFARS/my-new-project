@@ -75,7 +75,7 @@ const Urunler = () => {
                 <div className="blc flex gap-10 py-[40px]">
                   <div className="imgAndText1 text-center py-[10px] px-[10px]">
                     <img src={images1} alt="" />
-                    <p className="text-[16px] py-[10px]">
+                    <p className="text-[16px] py-[10px] ">
                       Poliüretan Sistemler
                     </p>
 
@@ -83,9 +83,11 @@ const Urunler = () => {
                       Sprey Poliüretan Köpük Sistemler
                     </p>
 
-                    <button className="btnUrun py-[10px] px-[20px] text-[white]">
-                      ÜRÜNÜ GÖR
-                    </button>
+                    <Link to="/urunDetay">
+                      <button className="btnUrun py-[10px] px-[20px] text-[white]">
+                        ÜRÜNÜ GÖR
+                      </button>
+                    </Link>
                   </div>
 
                   <div className="imgAndText text-center">
