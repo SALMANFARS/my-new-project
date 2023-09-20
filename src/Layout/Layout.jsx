@@ -25,7 +25,7 @@ export const Layout = () => {
           </div>
           <div className="items">
             <Link to="/urunler">
-            <img src={items} alt="" />
+              <img src={items} alt="" />
             </Link>
           </div>
 
@@ -37,10 +37,12 @@ export const Layout = () => {
               <Link to="/uygulamalar">
                 <li>Uygulamalar</li>
               </Link>
-              <Link to="/contact">
+              <Link to="/kaynaklar">
                 <li>Kaynaklar</li>
               </Link>
-              <li>Haberler</li>
+              <Link to="/haber">
+                <li>Haberler</li>
+              </Link>
             </ul>
 
             <div className="lang sm:block  md:flex md:py-[0px]">
@@ -50,12 +52,14 @@ export const Layout = () => {
               </select>
 
               <div className="btn ">
-                <button className="flex py-[10px] px-[25px] bg-blue-500 text-white gap-4 rounded-[5px]">
-                  <div className="img">
-                    <img src={icons} alt="" />
-                  </div>
-                  Iletisim
-                </button>
+                <Link to="/iletisim">
+                  <button className="flex py-[10px] px-[25px] bg-blue-500 text-white gap-4 rounded-[5px]">
+                    <div className="img">
+                      <img src={icons} alt="" />
+                    </div>
+                    Iletisim
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

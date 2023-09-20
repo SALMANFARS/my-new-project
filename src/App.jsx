@@ -10,6 +10,10 @@ import Kurumsal from './pages/Kurumsal/Kurumsal'
 import Uygulamalar from './pages/Uygulamalar/Uygulamalar'
 import Urunler from './pages/Urunler/Urunler'
 import UrunDetay from './pages/UrunDetay/UrunDetay'
+import Haber from './pages/Haber/Haber'
+import HaberDetay from './pages/HaberDeday/HaberDetay'
+import Iletisim from './pages/Iletisim/Iletisim'
+import Kaynaklar from './pages/Kaynaklar/Kaynaklar'
 
 
 
@@ -48,6 +52,22 @@ function App() {
         {
           path: "urunDetay",
           element: <UrunDetay />,
+        },
+        {
+          path: "haber",
+          element: <Haber />,
+        },
+        {
+          path: "haberDetay",
+          element: <HaberDetay />,
+        },
+        {
+          path: "iletisim",
+          element: <Iletisim />,
+        },
+        {
+          path: "kaynaklar",
+          element: <Kaynaklar />,
         },
         {
           path: "404",
