@@ -1,0 +1,14 @@
+.vizitka{
+    border-radius: 0px 20px 0px 22px;
+border: 1px solid #27A1B3;
+background: linear-gradient(113deg, #667085 0.87%, #12303A 100.58%);
+}
+
+.imgVizitka{
+    transform: rotate(-15deg); 
+}
+.vizitka2{
+    border-radius: 0px 20px 0px 21px;
+border: 1px solid #D0D5DD;
+
+}

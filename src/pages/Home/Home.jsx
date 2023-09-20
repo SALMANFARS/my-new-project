@@ -154,7 +154,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="prg2">
-                <p className="text-gray-500 text-[20px]">
+                <p className="text-gray-300 text-[20px]">
                   Bir numaralı önceliğimiz <br /> olan müşteri memnuniyetimiz ve{" "}
                   <br />
                   kaliteli ürün politikamız <br /> sayesinde, burada
