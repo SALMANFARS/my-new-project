@@ -26,8 +26,8 @@ const Urunler = () => {
               </p>
             </div>
 
-            <div className="leftRIght sm:grid sm:grid-cols-1  lg:grid-cols-2  gap-10 py-[50px]">
-              <div className="left ">
+            <div className="leftRIght sm:grid grid-cols-1 md:flex   gap-10 py-[50px]">
+              <div className="left md:w-[40%]">
                 <div className="inpBtn">
                   <input
                     type="text"
@@ -71,9 +71,9 @@ const Urunler = () => {
                 </div>
               </div>
 
-              <div className="rights">
+              <div className="rights md:w-[60%]">
                 <div className="blc flex gap-10 py-[40px]">
-                  <div className="imgAndText1 text-center py-[10px] px-[10px]">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images1} alt="" />
                     <p className="text-[16px] py-[10px] ">
                       Poliüretan Sistemler
@@ -90,7 +90,7 @@ const Urunler = () => {
                     </Link>
                   </div>
 
-                  <div className="imgAndText text-center">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images2} alt="" />
                     <p className="text-[16px] py-[10px]">
                       Poliüretan Sistemler
@@ -107,7 +107,7 @@ const Urunler = () => {
                 </div>
 
                 <div className="blc flex gap-10 py-[40px]">
-                  <div className="imgAndText text-center">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images3} alt="" />
                     <p className="text-[16px] py-[10px]">
                       Poliüretan Sistemler
@@ -122,7 +122,7 @@ const Urunler = () => {
                     </button>
                   </div>
 
-                  <div className="imgAndText text-center">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images4} alt="" />
                     <p className="text-[16px] py-[10px]">
                       Poliüretan Sistemler
@@ -139,7 +139,7 @@ const Urunler = () => {
                 </div>
 
                 <div className="blc flex gap-10 py-[40px]">
-                  <div className="imgAndText text-center">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images3} alt="" />
                     <p className="text-[16px] py-[10px]">
                       Poliüretan Sistemler
@@ -154,7 +154,7 @@ const Urunler = () => {
                     </button>
                   </div>
 
-                  <div className="imgAndText text-center">
+                  <div className="imgAndText text-center py-[10px] px-[10px]">
                     <img src={images5} alt="" />
                     <p className="text-[16px] py-[10px]">
                       Poliüretan Sistemler

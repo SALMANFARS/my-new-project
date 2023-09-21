@@ -1,0 +1,20 @@
+.sectionn1{
+    background-image: url(../../assets//Ekran.png);
+    
+}
+
+
+.adress{
+    border-radius: 0px 20px;
+background: #23697B;
+}
+
+.collback{
+    border-radius: 0px 20px 0px 0px;
+background: #27A1B3; 
+}
+
+.btns{
+    border-radius: 10px 2px;
+background: linear-gradient(96deg, #27A1B3 -1.02%, #7ED7E2 102.18%);
+}

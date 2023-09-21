@@ -13,25 +13,31 @@ import { BiLogoTwitter } from "react-icons/bi"
 import { BiLogoYoutube } from "react-icons/bi"
 import { BiLogoLinkedin } from "react-icons/bi"
 import m from "../assets/m.png"
+import TemporaryDrawer from '../Components/Burger';
 
 
 export const Layout = () => {
   return (
     <div>
       <div className="navbar">
-        <div className="block1 sm:flex flex-wrap justify-around items-center sm:py-[60px] md:py-[20px]">
-          <div className="logo">
-            <img src={logo} alt="" />
+        <div className="block1 sm:grid sm:grid-cols-2 sm:m-auto  md:flex flex-wrap justify-around items-center sm:py-[60px] md:py-[20px]">
+          <div className="logo  sm:ml-[50px] md:m-0">
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </div>
-          <div className="items">
+          <div className="burger sm:m-auto md:hidden">
+            <TemporaryDrawer />
+          </div>
+          <div className="items sm:m-auto sm:py-[20px] md:m-0 md:py-[0]">
             <Link to="/urunler">
               <img src={items} alt="" />
             </Link>
           </div>
 
-          <div className="item sm:ml-[50px] flex  ">
-            <ul className="flex flex-wrap gap-5 mt-[11px] ">
-              <Link to="/">
+          <div className="item0 text-gray-500 sm:ml-[50px] flex  ">
+            <ul className="sm:hidden md:flex flex-wrap gap-5 mt-[11px] ">
+              <Link to="/kurumsal">
                 <li>Kurumsal</li>
               </Link>
               <Link to="/uygulamalar">
@@ -45,15 +51,15 @@ export const Layout = () => {
               </Link>
             </ul>
 
-            <div className="lang sm:block  md:flex md:py-[0px]">
-              <select className=" sm:py-[10px] flex md:py-[0px] items-center  mx-[20px]">
+            <div className="lang  sm:block sm:m-auto  md:flex md:py-[0px]">
+              <select className=" sm:py-[10px] sm:mx-[0px] sm:mr-[40px] flex md:py-[0px] items-center md:mx-[20px]">
                 <option>tr</option>
                 <option>en</option>
               </select>
 
-              <div className="btn ">
+              <div className="btn sm:hidden md:flex">
                 <Link to="/iletisim">
-                  <button className="flex py-[10px] px-[25px] bg-blue-500 text-white gap-4 rounded-[5px]">
+                  <button className="btnYakum flex py-[10px] px-[25px]  text-white gap-4 rounded-[5px]">
                     <div className="img">
                       <img src={icons} alt="" />
                     </div>
@@ -70,9 +76,11 @@ export const Layout = () => {
 
       <footer className="sm:grid grid-cols-1 justify-items-center  md:grid-cols-2 pt-[50px]">
         <div className="left">
-          <div className="blocks sm:grid sm:grid-cols-1 sm:text-center md:grid-cols-3 md:text-start gap-10">
+          <div className="blocks flex flex-wrap justify-center  md:text-start gap-10">
             <div className="block1 ">
-              <img src={logo} alt="" />
+              <div className="imgLogo">
+                <img src={logo} alt="" />
+              </div>
               <div className="us py-[20px]">
                 <div className="item  flex py-[5px] ">
                   <div className="ma mr-[20px]">
@@ -148,31 +156,31 @@ export const Layout = () => {
             </div>
           </div>
           <hr className="w-[100%]" />
-          <div className="bottonText flex gap-10 py-[10px]">
-            <div className="text1">
+          <div className="bottonText sm:grid sm:grid-cols-1 md:grid-cols-2 gap-10 py-[10px]">
+            <div className="text1 m-auto">
               <p>
                 <b>© 2023 Monokim.com.tr </b>- Tüm Hakları Saklıdır
               </p>
             </div>
 
-            <div className="text2">
+            <div className="text2 m-auto">
               <p>tr/en</p>
             </div>
           </div>
         </div>
 
-        <div className="right sm:w-[400px] h-[363px] sm:text-center sm:pl-[10px] md:w-[100%] flex-shrink-0 md:pl-[40px] pt-[50px]">
+        <div className="right sm:w-[100%]  sm:text-center sm:pl-[10px] md:w-[100%] flex-shrink-0 md:pl-[40px] pt-[50px]">
           <div className="h1 text-[30px]">
             <h1>Son Gelişmelerden </h1>
             <h1 className="font-bold">Haberdar Olun</h1>
 
-            <div className="inpBtn sm:block lg:flex  gap-5  py-[20px]">
+            <div className="inpBtn sm:block sm  lg:flex  gap-5  py-[20px]">
               <input
                 type="text"
-                className="outline-none bg-gray-300 rounded-lg my-[10px]"
+                className="outline-none bg-gray-300 rounded-lg my-[10px] sm:w-[70%] lg:w-[50%]"
               />
 
-              <button className="sm:ml-[100px] md:ml-[0px] flex items-center text-lg py-[5px] px-[10px] bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-xl">
+              <button className="sm:m-auto lg:ml-[0px] flex items-center text-lg py-[5px] px-[10px] bg-gradient-to-r from-blue-500 to-blue-300 text-white rounded-xl">
                 GÖNDER →
               </button>
             </div>

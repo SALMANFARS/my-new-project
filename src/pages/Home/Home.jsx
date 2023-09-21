@@ -35,7 +35,7 @@ const Home = () => {
       <div className="section1">
         <div className="conteiner">
           <div className="block1 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-items-center py-[40px]">
-            <div className="left">
+            <div className="left ml-[10px]">
               <div className="txt1">
                 <h1 className="text-[44px] py-[10px]">
                   POLİÜRETAN SİSTEMLER <br />
@@ -106,7 +106,7 @@ const Home = () => {
       <div className="section2">
         <div className="conteiner">
           <div className="blocki2 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-items-center gap-10 py-[50px]">
-            <div className="left sm:grid sm:grid-cols-1 md:grid-cols-2 py-[50px] gap-5">
+            <div className="left ml-[10px] sm:grid sm:grid-cols-1 md:grid-cols-2 py-[50px] gap-5">
               <div className="block2 ">
                 <p className="text-white text-[30px]">
                   Kaliteli, yenilikçi ve <br />
@@ -168,9 +168,9 @@ const Home = () => {
 
               <div className="btn py-[40px] text-center text-white">
                 <Link to="/kurumsal">
-                <button className="bntKurumsal py-[10px] px-[20px] bg">
-                  KURUMSAL <span>&#8594;</span>
-                </button>
+                  <button className="bntKurumsal py-[10px] px-[20px] bg">
+                    KURUMSAL <span>&#8594;</span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Home = () => {
         <div className="conteiner">
           <div className="block4 py-[50px]">
             <div className="topText flex flex-wrap justify-between items-center">
-              <div className="left">
+              <div className="left ml-[10px]">
                 <div className="porag1">
                   <p className="text-[#98A2B3]">ÜRÜNLER</p>
                 </div>
@@ -280,9 +280,11 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="btn">
-                    <button className="btnN py-[10px] px-[10px] text-white ">
-                      HABERLER <span>&#8594;</span>
-                    </button>
+                    <Link to="/haber">
+                      <button className="btnN py-[10px] px-[10px] text-white ">
+                        HABERLER <span>&#8594;</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -378,10 +380,14 @@ const Home = () => {
       <div className="section5">
         <div className="conteiner">
           <div className="block6 text-center py-[100px] text-white ">
-            <p className="text-[40px] font-bold py-[5px]">Farklı Ürünler Üretiyor,</p>
+            <p className="text-[40px] font-bold py-[5px]">
+              Farklı Ürünler Üretiyor,
+            </p>
             <p className="text-[40px] py-[5px]">Kaliteden Ödün Vermiyoruz.</p>
             <div className="btn">
-              <button className="btn10 py-[10px] px-[20px] bg">İLETİŞİME GEÇ</button>
+              <button className="btn10 py-[10px] px-[20px] bg">
+                İLETİŞİME GEÇ
+              </button>
             </div>
           </div>
         </div>

@@ -41,7 +41,7 @@ const Uygulamalar = () => {
                 <img src={analiz} alt="" />
               </div>
 
-              <div className="rightt  py-[50px] ">
+              <div className="righttt  py-[50px] ">
                 <div className="txtt sm:text-center lg:text-start">
                   <h1 className="text-[#23697B] text-[44px]">
                     Uygulama <span className="font-bold">Süreci</span>
@@ -52,7 +52,7 @@ const Uygulamalar = () => {
                     <br /> alanda hizmet veren ürün yelpazesi ile..
                   </p>
 
-                  <div className="text-[16px] text-center m-auto">
+                  <div className="text-[16px] sm:text-center lg:text-start m-auto">
                     <p className="p11 py-[15px]">
                       B1, B2 ve B3 yanmazlık sınıfı
                     </p>
@@ -96,9 +96,9 @@ const Uygulamalar = () => {
                 slidesPerView={3}
                 centeredSlides={true}
                 spaceBetween={30}
-                pagination={{
-                  type: "fraction",
-                }}
+                // pagination={{
+                //   type: "fraction",
+                // }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
@@ -163,11 +163,11 @@ const Uygulamalar = () => {
         <div className="conteiner">
           <div className="block3">
             <div className="pravoLevo">
-              <div className="pravo flex justify-around items-center">
+              <div className="pravo flex flex-wrap justify-around items-center">
                 <div className="photo">
                   <img src={photo} alt="" />
                 </div>
-                <div className="teht">
+                <div className="teht sm:py-[10px] md:py-[0]">
                   <p className="text-[30px] text-[#23697B] ">
                     Geleceğe Dönük <br />
                     <span className="text-[#98A2B3]">Uygulamalar</span>
@@ -183,7 +183,7 @@ const Uygulamalar = () => {
                 </div>
               </div>
 
-              <div className="levo flex justify-around items-center py-[50px]">
+              <div className="levo flex flex-wrap justify-around items-center py-[50px]">
                 <div className="teht">
                   <p className="text-[30px] text-[#23697B] text-right">
                     Yüksek Kaliteli <br />

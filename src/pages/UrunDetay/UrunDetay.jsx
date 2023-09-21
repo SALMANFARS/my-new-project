@@ -170,7 +170,7 @@ const UrunDetay = () => {
       <div className="section23">
         <div className="conteiner">
           <div className="block23">
-            <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 py-[50px] justify-items-center ">
+            <div className="chapRost2 sm:grid sm:grid-cols-1 lg:grid-cols-2 py-[50px] justify-items-center ">
               <div className="chap relative">
                 <div className="img  absolute z-[5] ">
                   <img src={imgTag} alt="" />
@@ -207,7 +207,7 @@ const UrunDetay = () => {
                 </div>
                 <div className="btnAndbtn sm:flex sm:justify-center items-center lg:justify-around gap-10">
                   <div className="btn5">
-                    <button className="btn10 py-[10px] px-[0px] text-white">
+                    <button className="btn10 py-[10px] px-[10px] text-white">
                       TEKLİF AL
                     </button>
                   </div>

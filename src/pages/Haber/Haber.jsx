@@ -34,7 +34,7 @@ const Haber = () => {
             </div>
 
             <div className="block2 grid  gap-y-10">
-              <div className="chapRost1 sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center py-[10px]">
+              <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center py-[10px]">
                 <div className="chap">
                   <img src={photo1} alt="" />
                 </div>
@@ -64,7 +64,7 @@ const Haber = () => {
                 </div>
               </div>
 
-              <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center">
+              <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center py-[10px]">
                 <div className="chap">
                   <img src={photo2} alt="" />
                 </div>
@@ -92,7 +92,7 @@ const Haber = () => {
                 </div>
               </div>
 
-              <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center">
+              <div className="chapRost sm:grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center items-center py-[10px]">
                 <div className="chap">
                   <img src={photo3} alt="" />
                 </div>
