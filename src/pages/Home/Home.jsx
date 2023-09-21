@@ -29,7 +29,14 @@ import imgCenter from "../../assets/imgCenter.png"
 import analiz from "../../assets/analiz.png";
 import clock from "../../assets/Clock.png"
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <div>
       <div className="section1">
@@ -38,40 +45,48 @@ const Home = () => {
             <div className="left ml-[10px]">
               <div className="txt1">
                 <h1 className="text-[44px] py-[10px]">
-                  POLİÜRETAN SİSTEMLER <br />
-                  <span className="text-orange-500">ÇÖZÜM ORTAĞINIZ</span>
+                  {t("section1.POLİÜRETAN SİSTEMLER")} <br />
+                  <span className="text-orange-500">
+                    {" "}
+                    {t("section1.ÇÖZÜM ORTAĞINIZ")}
+                  </span>
                 </h1>
               </div>
               <div className="btn flex gap-10">
                 <button className="btn1 py-[10px] px-[10px]">
-                  DETAY <span>&#8594;</span>
+                  {t("section1.DETAY")} <span>&#8594;</span>
                 </button>
 
-                <button className="btn2 text-[#245766]">İLETİŞİM</button>
+                <button className="btn2 text-[#245766]">
+                  {t("section1.İLETİŞİM")}
+                </button>
               </div>
 
               <div className="text  lg:pt-[150px]">
                 <p className="text-xs text-[#475467] py-[10px]">
-                  Müşterilerimizin kaliteli ve güvenilir ürünlere sahip olmaları{" "}
-                  <br />
-                  için standartlarımızı en yüksek seviyede.
+                  {t(
+                    "section1.Müşterilerimizin kaliteli ve güvenilir ürünlere sahip olmaları için standartlarımızı en yüksek seviyede."
+                  )}
                 </p>
 
                 <div className="textArrow flex items-center gap-20">
                   <p className="text-[#919191] text-[18px] py-[10px]">
-                    İZOSİYANATLAR
+                    {t("section1.İZOSİYANATLAR")}
                   </p>
                   <span className="text-[#919191]">&#8594;</span>
                 </div>
                 <hr className="w-[25%]" />
 
                 <p className="p1 py-[10px]">
-                  Hem kendi ekibimiz içinde hem de müşterilerimize karşı her{" "}
+                  {t("section1.key2")}
                   <br />
-                  zaman şeffaflıktan yana olduk.
+                  {t("section1.key3")}
                 </p>
 
-                <p className="text-gray-200  py-[10px]">KURUMSAL</p>
+                <p className="text-gray-200  py-[10px]">
+                  {" "}
+                  {t("navbar.Kurumsal")}
+                </p>
               </div>
             </div>
 
@@ -96,7 +111,7 @@ const Home = () => {
 
                 <div className="mause flex items-center gap-5">
                   <img src={mause} alt="" />
-                  <p className="text2">Aşağı Kaydır</p>
+                  <p className="text2"> {t("section1.Aşağı Kaydır")}</p>
                 </div>
               </div>
             </div>
@@ -109,9 +124,10 @@ const Home = () => {
             <div className="left ml-[10px] sm:grid sm:grid-cols-1 md:grid-cols-2 py-[50px] gap-5">
               <div className="block2 ">
                 <p className="text-white text-[30px]">
-                  Kaliteli, yenilikçi ve <br />
+                  {t("section1.Kaliteli, yenilikçi ve")} <br />
                   <span className="underText">
-                    Farklı Ürünler <br /> Üretiyoruz.
+                    {t("section1.Farklı Ürünler")} <br />
+                    {t("section1.Üretiyoruz")}.
                   </span>
                   <img src={img3} alt="" className="py-[30px]" />
                 </p>
@@ -127,7 +143,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="txx flex justify-center">
-                      <p className="text-white">Ülke</p>
+                      <p className="text-white">{t("section1.Ülke")}</p>
                     </div>
                   </div>
                   <div className="porag2 text-gray-400">
@@ -135,7 +151,7 @@ const Home = () => {
                       <p>100+</p>
                     </div>
                     <div className="teext text-center">
-                      <p>Müşteri</p>
+                      <p>{t("section1.Müşteri")}</p>
                     </div>
                   </div>
                 </div>
@@ -144,32 +160,39 @@ const Home = () => {
             <div className="right3">
               <div className="prg1">
                 <p className="text-white text-[20px] py-[50px]">
-                  Müşterilerimizin kaliteli ve <br /> güvenilir ürünlere sahip
-                  olmaları <br />
-                  için standartlarımızı en yüksek <br /> seviyede tutuyoruz. Hem
-                  kendi <br />
-                  ekibimiz içinde hem de <br /> müşterilerimize karşı her zaman{" "}
+                  {t("section1.Müşterilerimizin kaliteli ve")} <br />{" "}
+                  {t("section1.güvenilir ürünlere sahip olmaları")} <br />
+                  {t("section1.için standartlarımızı en yüksek")} <br />{" "}
+                  {t("section1.ekibimiz içinde hem de")}
                   <br />
-                  şeffaflıktan yana olduk. <br />
+                  {t("section1.müşterilerimize karşı her zaman")}
+                  <br /> {t("section1.müşterilerimize karşı her zaman")} <br />
+                  {t("section1.şeffaflıktan yana olduk.")}
+                  <br />
                 </p>
               </div>
               <div className="prg2">
                 <p className="text-gray-300 text-[20px]">
-                  Bir numaralı önceliğimiz <br /> olan müşteri memnuniyetimiz ve{" "}
+                  {t("section1.Bir numaralı önceliğimiz")} <br />{" "}
+                  {t("section1.olan müşteri memnuniyetimiz ve")}
                   <br />
-                  kaliteli ürün politikamız <br /> sayesinde, burada
-                  ihtiyaçlarınızın <br />
-                  her zaman karşılanacağından <br />
-                  emin olabilirsiniz. Bizimle iş <br />
-                  yapmayı tercih ettiğiniz her <br /> an avantajlara sahip
-                  olacaksınız. <br />
+                  {t("section1.kaliteli ürün politikamız")}
+                  <br /> {t("section1.sayesinde, burada ihtiyaçlarınızın")}
+                  <br />
+                  {t("section1.her zaman karşılanacağından")} <br />
+                  {t("section1.emin olabilirsiniz. Bizimle iş")}
+                  <br />
+                  {t("section1.yapmayı tercih ettiğiniz her")}
+                  <br /> {t("section1.an avantajlara sahip olacaksınız.")}
+                  <br />
                 </p>
               </div>
 
               <div className="btn py-[40px] text-center text-white">
                 <Link to="/kurumsal">
                   <button className="bntKurumsal py-[10px] px-[20px] bg">
-                    KURUMSAL <span>&#8594;</span>
+                    {t("navbar.Kurumsal")}
+                    <span> &#8594;</span>
                   </button>
                 </Link>
               </div>
@@ -184,16 +207,25 @@ const Home = () => {
             <div className="topText flex flex-wrap justify-between items-center">
               <div className="left ml-[10px]">
                 <div className="porag1">
-                  <p className="text-[#98A2B3]">ÜRÜNLER</p>
+                  <p className="text-[#98A2B3]">{t("navbar.Ürünler")}</p>
                 </div>
-                <p className="por text-[66px]">Ürün Gruplarımız</p>
+                <p className="por text-[66px]">
+                  {" "}
+                  {t("section1.Ürün Gruplarımız")}
+                </p>
               </div>
               <div className="right5">
                 <p className="text-sm">
-                  Bir numaralı önceliğimiz olan müşteri <br /> memnuniyetimiz ve
-                  kaliteli ürün politikamız <br /> sayesinde, burada
-                  ihtiyaçlarınızın her zaman <br />
-                  karşılanacağından emin olabilirsiniz. <br />
+                  {t("section1.Bir numaralı önceliğimiz olan müşteri")}
+                  <br />{" "}
+                  {t("section1.memnuniyetimiz ve kaliteli ürün politikamız")}
+                  <br />{" "}
+                  {t(
+                    "section1.sayesinde, burada ihtiyaçlarınızın her zaman"
+                  )}{" "}
+                  <br />
+                  {t("section1.karşılanacağından emin olabilirsiniz.")}
+                  <br />
                 </p>
               </div>
             </div>
@@ -261,8 +293,10 @@ const Home = () => {
             <div className="leftRight flex flex-wrap justify-around items-center">
               <div className="left">
                 <div className="porag1">
-                  <p className="text-[#98A2B3]">HABER & BLOG</p>
-                  <p className="por text-[66px]">Son Gelişmeler</p>
+                  <p className="text-[#98A2B3]">{t("section1.HABER & BLOG")}</p>
+                  <p className="por text-[66px]">
+                    {t("section1.Son Gelişmeler")}
+                  </p>
                 </div>
               </div>
               <div className="rightt">
@@ -282,7 +316,7 @@ const Home = () => {
                   <div className="btn">
                     <Link to="/haber">
                       <button className="btnN py-[10px] px-[10px] text-white ">
-                        HABERLER <span>&#8594;</span>
+                        {t("section1.Haberler")} <span> &#8594;</span>
                       </button>
                     </Link>
                   </div>
@@ -298,15 +332,22 @@ const Home = () => {
                     <img src={clock} alt="" />
                   </div>
                   <div className="porag2">
-                    <p>21 Mayıs 2023</p>
+                    <p> {t("section1.data")}</p>
                   </div>
                 </div>
 
                 <div className="text">
-                  <p className="p5">
-                    Araştırmacılar, elektron mikroskobu için veri <br />{" "}
-                    biliminden ve yapay zekâdan yararlanmak <br /> için yol
-                    haritası çıkarıyor
+                  <p className="p5 text-[18px]">
+                    {t(
+                      "section1.Araştırmacılar, elektron mikroskobu için veri biliminden ve yapay"
+                    )}
+                    <br />
+                    {t(
+                      "section1.zekâdan yararlanmak için yol haritası çıkarıyor"
+                    )}
+                    <br />
+                    {t("section1.biliminden ve yapay zekâdan yararlanmak")}
+                    {t("section1.için yol haritası çıkarıyor")}
                   </p>
                 </div>
               </div>
@@ -318,15 +359,19 @@ const Home = () => {
                       <img src={clock} alt="" />
                     </div>
                     <div className="porag2">
-                      <p>21 Mayıs 2023</p>
+                      <p>{t("section1.data")}</p>
                     </div>
                   </div>
 
-                  <div className="txt">
+                  <div className="txt text-[12px]">
                     <p>
-                      Araştırmacılar, elektron mikroskobu için veri biliminden
-                      ve yapay <br /> zekâdan yararlanmak için yol haritası
-                      çıkarıyor
+                      {t(
+                        "section1.Araştırmacılar, elektron mikroskobu için veri biliminden ve yapay"
+                      )}
+                      <br />
+                      {t(
+                        "section1.zekâdan yararlanmak için yol haritası çıkarıyor"
+                      )}
                     </p>
                   </div>
                   <br />
@@ -339,15 +384,19 @@ const Home = () => {
                       <img src={clock} alt="" />
                     </div>
                     <div className="porag2">
-                      <p>21 Mayıs 2023</p>
+                      <p>{t("section1.data")}</p>
                     </div>
                   </div>
 
-                  <div className="txt">
+                  <div className="txt text-[12px]">
                     <p>
-                      Araştırmacılar, elektron mikroskobu için veri biliminden
-                      ve yapay <br /> zekâdan yararlanmak için yol haritası
-                      çıkarıyor
+                      {t(
+                        "section1.Araştırmacılar, elektron mikroskobu için veri biliminden ve yapay"
+                      )}
+                      <br />
+                      {t(
+                        "section1.zekâdan yararlanmak için yol haritası çıkarıyor"
+                      )}
                     </p>
                   </div>
                   <br />
@@ -359,14 +408,18 @@ const Home = () => {
                       <img src={clock} alt="" />
                     </div>
                     <div className="porag2">
-                      <p>21 Mayıs 2023</p>
+                      <p>{t("section1.data")}</p>
                     </div>
                   </div>
-                  <div className="txt">
+                  <div className="txt text-[12px]">
                     <p>
-                      Araştırmacılar, elektron mikroskobu için veri biliminden
-                      ve yapay <br /> zekâdan yararlanmak için yol haritası
-                      çıkarıyor
+                      {t(
+                        "section1.Araştırmacılar, elektron mikroskobu için veri biliminden ve yapay"
+                      )}
+                      <br />
+                      {t(
+                        "section1.zekâdan yararlanmak için yol haritası çıkarıyor"
+                      )}
                     </p>
                   </div>
                   <br />
@@ -381,12 +434,14 @@ const Home = () => {
         <div className="conteiner">
           <div className="block6 text-center py-[100px] text-white ">
             <p className="text-[40px] font-bold py-[5px]">
-              Farklı Ürünler Üretiyor,
+              {t("section1.Farklı Ürünler Üretiyor,")}
             </p>
-            <p className="text-[40px] py-[5px]">Kaliteden Ödün Vermiyoruz.</p>
+            <p className="text-[40px] py-[5px]">
+              {t("section1.Kaliteden Ödün Vermiyoruz.")}
+            </p>
             <div className="btn">
               <button className="btn10 py-[10px] px-[20px] bg">
-                İLETİŞİME GEÇ
+                {t("section1.İLETİŞİME GEÇ")}
               </button>
             </div>
           </div>

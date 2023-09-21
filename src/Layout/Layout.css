@@ -9,3 +9,13 @@ li:hover{
     border-radius: 10px 2px;
 background: linear-gradient(96deg, #27A1B3 -1.02%, #7ED7E2 102.18%);
 }
+
+.porog{
+    color: #23697B;
+font-family: Qanelas;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.9px;
+}
