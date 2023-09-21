@@ -71,8 +71,8 @@ export const Layout = () => {
                   onChange={(elem) => changeLanguage(elem.target.value)}
                   className=" sm:py-[10px] sm:mx-[0px] sm:mr-[40px] flex md:py-[0px] items-center md:mx-[20px]"
                 >
-                  <option value="tr">tr</option>
-                  <option value="en">en</option>
+                  <option value="tr">TR</option>
+                  <option value="en">EN</option>
                 </select>
 
                 <div className="btn sm:hidden md:flex">

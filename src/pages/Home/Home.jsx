@@ -7,6 +7,9 @@ import { BiLogoLinkedin } from "react-icons/bi";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import "animate.css";
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -25,6 +28,11 @@ import slider1 from "../../assets/slider1.png";
 import slider2 from "../../assets/slider2.png";
 import slider3 from "../../assets/slider3.png";
 import slider4 from "../../assets/slider4.png";
+
+
+import p1 from "../../assets/page7img1.png"
+import p2 from "../../assets/page7img2.png";
+import p3 from "../../assets/page7img3.png";
 import imgCenter from "../../assets/imgCenter.png"
 import analiz from "../../assets/analiz.png";
 import clock from "../../assets/Clock.png"
@@ -43,8 +51,8 @@ const Home = () => {
         <div className="conteiner">
           <div className="block1 sm:grid sm:grid-cols-1 md:grid-cols-2 justify-items-center py-[40px]">
             <div className="left ml-[10px]">
-              <div className="txt1">
-                <h1 className="text-[44px] py-[10px]">
+              <div className="  txt1">
+                <h1 className="animate__animated animate__slideInDown text-[44px] py-[10px]">
                   {t("section1.POLİÜRETAN SİSTEMLER")} <br />
                   <span className="text-orange-500">
                     {" "}
@@ -53,11 +61,11 @@ const Home = () => {
                 </h1>
               </div>
               <div className="btn flex gap-10">
-                <button className="btn1 py-[10px] px-[10px]">
+                <button className="animate__animated animate__slideInLeft btn1 py-[10px] px-[10px]">
                   {t("section1.DETAY")} <span>&#8594;</span>
                 </button>
 
-                <button className="btn2 text-[#245766]">
+                <button className="animate__animated animate__slideInLeft btn2 text-[#245766]">
                   {t("section1.İLETİŞİM")}
                 </button>
               </div>
@@ -158,7 +166,7 @@ const Home = () => {
               </div>
             </div>
             <div className="right3">
-              <div className="prg1">
+              <div className="animate__animated animate__slideInRight prg1">
                 <p className="text-white text-[20px] py-[50px]">
                   {t("section1.Müşterilerimizin kaliteli ve")} <br />{" "}
                   {t("section1.güvenilir ürünlere sahip olmaları")} <br />
@@ -172,7 +180,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="prg2">
-                <p className="text-gray-300 text-[20px]">
+                <p className="animate__backInRight text-gray-300 text-[20px]">
                   {t("section1.Bir numaralı önceliğimiz")} <br />{" "}
                   {t("section1.olan müşteri memnuniyetimiz ve")}
                   <br />
@@ -255,9 +263,6 @@ const Home = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src={slider1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
                   <img src={slider2} alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -266,9 +271,7 @@ const Home = () => {
                 <SwiperSlide>
                   <img src={slider4} alt="" />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <img src={slider1} alt="" />
-                </SwiperSlide>
+
                 <SwiperSlide>
                   <img src={slider2} alt="" />
                 </SwiperSlide>
